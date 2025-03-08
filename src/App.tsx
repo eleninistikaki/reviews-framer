@@ -14,7 +14,7 @@ export function App() {
     <main style={styles.container} className="fade-in">
       <div style={styles.header}>
         <FaStar style={styles.iconStar} />
-        <h3 style={styles.title}>Review Summary</h3>
+        <h3 style={styles.title}>Reviewly</h3>
       </div>
 
       <div style={styles.descriptionContainer}>
