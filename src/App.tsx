@@ -1,5 +1,5 @@
 import { framer } from "framer-plugin";
-import { FaStar, FaMousePointer, FaCheckCircle, FaMagic } from "react-icons/fa";
+import { FaStar, FaMousePointer, FaCheckCircle, FaMagic, FaBook } from "react-icons/fa";
 import PluginButton from "./components/PluginButton";
 import "./App.css";
 
@@ -18,6 +18,13 @@ export function App() {
       </div>
 
       <div style={styles.descriptionContainer}>
+      <div style={styles.row}>
+          <FaBook style={styles.icon} />
+          <p>
+            <strong>Documentation</strong> is available <a href="https://kaizengrowth.notion.site/Reviewly-Documentation-1a70ca9b1cab804683b6dc7b3c46c532" target="_blank">here</a>.
+          </p>
+        </div>
+
         <div style={styles.row}>
           <FaMagic style={styles.icon} />
           <p>
@@ -30,10 +37,7 @@ export function App() {
           <p>Click below to add a fully functional review section.</p>
         </div>
 
-        <div style={styles.row}>
-          <FaCheckCircle style={styles.icon} />
-          <p>Quick & hassle-free setup!</p>
-        </div>
+
       </div>
 
       <PluginButton />
