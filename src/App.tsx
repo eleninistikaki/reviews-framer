@@ -5,8 +5,8 @@ import "./App.css";
 
 framer.showUI({
   position: "top right",
-  width: 340,
-  height: 320,
+  width: 300,
+  height: 300,
 });
 
 export function App() {
@@ -37,11 +37,12 @@ export function App() {
           <p>Click below to add a fully functional review section.</p>
         </div>
 
-
       </div>
 
       <PluginButton />
-
+      <div style={styles.row}>
+          <p style={{ fontSize: "10px" }}>Reviewly is an independent plugin created for Framer. It is not affiliated with, endorsed by, or associated with any third-party company or brand.</p>
+        </div>     
       <div style={styles.successMessage} id="successMessage">
         <FaCheckCircle style={styles.successIcon} />
         <span>Component inserted successfully!</span>
@@ -74,8 +75,8 @@ const styles = {
     flexDirection: "column" as "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: "20px",
-    background: "linear-gradient(135deg, #ffffff, #f0f2f5)",
+    padding: "12px",
+    //background: "#ffffff",
     borderRadius: "14px",
     boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.15)",
     transition: "all 0.4s ease-in-out",
@@ -83,8 +84,8 @@ const styles = {
   header: {
     display: "flex",
     alignItems: "center",
-    gap: "10px",
-    marginBottom: "16px",
+    gap: "5px",
+    marginBottom: "5px",
   },
   iconStar: {
     fontSize: "24px",
