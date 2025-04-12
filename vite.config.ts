@@ -1,12 +1,24 @@
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
-import mkcert from "vite-plugin-mkcert"
 import framer from "vite-plugin-framer"
 
-// https://vitejs.dev/config/
+// Needed because __dirname is not available in ESM
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
 export default defineConfig({
-    plugins: [react(), mkcert(), framer()],
-    build: {
-        target: "ES2022",
+  plugins: [react(), framer()],
+  server: {
+    host: true,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, "localhost-key.pem")),
+      cert: fs.readFileSync(path.resolve(__dirname, "localhost-cert.pem")),
     },
+  },
+  build: {
+    target: "ES2022",
+  },
 })
