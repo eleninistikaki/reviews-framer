@@ -11,7 +11,7 @@ const PluginButton: React.FC = () => {
       const instance = await framer.addComponentInstance({
         url: "https://framer.com/m/ReviewSummary-3TV0.js@RFyaZnZ4GBBbAJmjtiLP",
         attributes: {
-          width: "1800px",
+          width: "1700px",
           height: "200px",
         },
       });
@@ -50,7 +50,7 @@ const styles = {
       gap: "3px",
       backgroundColor: "#f3f3f3",
       color: "#333333",
-      padding: "10px 10px",
+      padding: "5px 5px",
       border: "none",
       borderRadius: "10px",
       cursor: "pointer",

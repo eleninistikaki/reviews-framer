@@ -46,7 +46,7 @@ const styles = {
   },
   contentWrapper: {
     width: "92%",
-    maxWidth: "600px",
+    maxWidth: "550px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
