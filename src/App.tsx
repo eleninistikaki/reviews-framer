@@ -3,6 +3,12 @@ import { FaStar, FaMousePointer, FaCheckCircle, FaMagic, FaBook } from "react-ic
 import PluginButton from "./components/PluginButton";
 import "./App.css";
 
+framer.showUI({
+  position: "top right",
+  width: 300,
+  height: 300,
+});
+
 export function App() {
   return (
     <main style={styles.mainContainer} className="fade-in">
