@@ -1,0 +1,35 @@
+.plugin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background-color: #f3f3f3;
+    color: #333333;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .plugin-button-icon {
+    font-size: 12px;
+  }
+  
+  .plugin-loading-icon {
+    font-size: 16px;
+    animation: spin 1s infinite linear;
+  }
+  
+  /* Spinner animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

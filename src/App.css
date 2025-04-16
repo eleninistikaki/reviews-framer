@@ -1,4 +1,108 @@
 /* Your Plugin CSS file */
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Container styles */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.4s ease-in-out;
+  height: fit-content;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 92%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 5px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.paragraph {
+  margin: 0 0 3px 0;
+}
+
+.icon {
+  font-size: 22px;
+  color: #28a745;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 0;
+}
+
+.icon-star {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.title {
+  font-size: 0;
+  font-weight: bold;
+  margin: 0;
+}
+
+.success-message {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #4caf50;
+  margin: 8px 0 0 0;
+  padding: 0;
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  justify-content: center;
+}
+
+.success-icon {
+  font-size: 18px;
+}
+
+/* @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+} */
 
 
 
@@ -32,4 +136,11 @@
   .spin {
     animation: spin 1s infinite linear;
   }
+
+
+
+
+
+
+
   
