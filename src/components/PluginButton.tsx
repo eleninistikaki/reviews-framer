@@ -15,20 +15,28 @@ const PluginButton: React.FC = () => {
           height: "200px",
         },
       });
-
+  
       console.log("Review component inserted:", instance);
-      const successMessage = document.getElementById("successMessage");
-      if (successMessage) {
-        setLoading(false)
-        successMessage.style.display = "flex";
-        setTimeout(() => {
-          successMessage.style.display = "none";
-        }, 5000); // Hide after 5 seconds
-      }
+  
+      // Show a success notification using framer.notify
+      framer.notify("Review component added successfully!", {
+        durationMs: 5000,
+        variant: "success",
+      });
+  
     } catch (error) {
       console.error("Error inserting review component:", error);
+  
+      // Show an error notification
+      framer.notify("Failed to add the review component.", {
+        durationMs: 5000,
+        variant: "error",
+      });
+    } finally {
+      setLoading(false);
     }
   };
+  
 
   return (
     <button

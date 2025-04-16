@@ -5,8 +5,8 @@ import "./App.css";
 
 framer.showUI({
   position: "top right",
-  width: 300,
-  height: 300,
+  width: 290,
+  height: 220,
 });
 
 export function App() {
